@@ -2,22 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Run Buddy</title>
+        <title>Run Buddy Webpage</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <!-- Add this to the page and see what happens!  -->
     </head>
 
     <body>
+        <!-- Navigation -->
         <header>
             <h1>
                 <a href="/">RUN BUDDY</a>
             </h1>
             <nav>
-                <!-- Unordered list element -->
+                <!-- Unordered List of Elements -->
                 <ul>
-                    <!-- List item element -->
+                    <!-- List Item Element -->
                     <li>
-                        <!-- Anchor element -->
+                        <!-- Anchor Element -->
                         <a href="#what-we-do">What We Do</a>
                     </li>
                     <li>
@@ -33,64 +33,89 @@
             </nav>
         </header>
 
-        <!-- hero / jumbotron page -->
+        <!-- "Hero/Jumbotron" -->
         <section class="hero">
             <div class="hero-form">
                 <h3>Get Started Today</h3>
-                <p>Fill out this form and one of our trainers will schedule a consult.</p>
-                <!-- Add form element -->
+                <p>Fill out this form and one of our trainers will schedule a consult</p>
+                <!-- Add Form Element  -->
                 <form>
                     <label for="name">Enter full name:</label>
-                    <input type="text" class="hero-form-text-box" placeholder="Your name" name="name" id="name" />
+                    <input class="form-input" type="text" placeholder="Your Name" name="name" id="name" />
                     <label for="email">Enter email address:</label>
-                    <input
-                        type="email"
-                        class="hero-form-text-box"
-                        placeholder="Email Address"
-                        name="email"
-                        id="email"
-                    />
+                    <input class="form-input" type="email" placeholder="Email Address" name="email" id="email" />
                     <label for="phone">Enter a telephone number:</label>
-                    <input type="tel" class="hero-form-text-box" placeholder="Phone Number" name="phone" id="phone" />
+                    <input class="form-input" type="tel" placeholder="Phone Number" name="phone" id="phone" />
                     <p>
-                        Have you worked out with a trainer bewfore?
+                        Have you worked out with a trainer before?
                         <input type="radio" name="trainer-confirm" id="trainer-yes" />
                         <label for="trainer-yes">Yes</label>
                         <input type="radio" name="trainer-confirm" id="trainer-no" />
                         <label for="trainer-no">No</label>
                     </p>
                     <p>
-                        <label for="age-acknow">I acknowledge that I am at least 18 years of age</label>
-                        <input type="checkbox" name="age-acknow" id="age-acknow" />
+                        <label for="ageConsent">I acknowledge that I am at least 18 years of age</label>
+                        <input type="checkbox" name="ageConsent" id="ageConsent" />
                     </p>
-                    <button type="submit" name="get-running" id="get-running">Get Running</button>
+                    <p>
+                        <button type="submit" name="get-running" id="get-running">Get Running!</button>
+                    </p>
                 </form>
             </div>
         </section>
 
-        <!-- what we do section -->
-        <section>
-            <h2>What we Do</h2>
+        <!-- "what we do" section -->
+        <section id="what-we-do">
+            <h2>What We Do</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla tenetur itaque minima ipsum eius debitis
+                sapiente quasi pariatur error repellat iusto veritatis amet, quis ad atque quos impedit alias aut. Lorem
+                ipsum, dolor sit amet consectetur adipisicing elit. Saepe fugit beatae quibusdam, reiciendis cupiditate
+                exercitationem, adipisci harum quis, quod consequuntur corporis. Eius ab ad, possimus excepturi fuga eos
+                neque ducimus!Lorem
+            </p>
         </section>
 
-        <!-- what you do section -->
-        <section>
-            <h2>What you Do</h2>
+        <!-- "what you do" section -->
+        <section id="what-you-do">
+            <h2>What You Do</h2>
+
+            <div>
+                <!-- insert this img element -->
+                <img src="./assets/images/step-1.svg" alt="" />
+                <h3>Step 1: Fill Out the Form Above.</h3>
+                <p>You're already here, so why not?</p>
+            </div>
+
+            <div>
+                <h3>Step 2: Consult with One of Our Trainers.</h3>
+                <p>Are you here to build muscle, lose weight, or just feel good?</p>
+            </div>
+
+            <div>
+                <h3>Step 3: Get Running.</h3>
+                <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+            </div>
+
+            <div>
+                <h3>Step 4: See Results.</h3>
+                <p>Bi-weekly checkins with your trainer will keep you focused</p>
+            </div>
         </section>
 
-        <!-- meet the trainer section -->
+        <!-- Meet The Trainers -->
         <section>
-            <h2>Meet Your Trainers</h2>
+            <h2>Meet The Trainers</h2>
         </section>
 
-        <!-- reach out section -->
+        <!-- Reach Out -->
         <section>
-            <h2>Reach out</h2>
+            <h2>Reach Out</h2>
         </section>
 
-        <!-- footer -->
+        <!-- Footer -->
         <footer>
-            <h2>❤️ Made with love by Run Buddy</h2>
+            <h2>❤️ Made with love by Run Buddy.</h2>
             <div>
                 <a href="#">Read Our Privacy Policy</a><br />
                 &copy; 2019 Run Buddy, Inc.
