@@ -44,7 +44,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -55,10 +55,10 @@ header nav ul li a {
 footer {
   background: #fce138;
   padding: 40px 35px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 footer h2 {
@@ -90,6 +90,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .hero-cta {
@@ -98,7 +99,7 @@ section {
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -149,7 +150,7 @@ section {
 
 /* SECTION TITLE STYLES START */
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   border-bottom: 3px solid;
   color: #024e76;
   padding-bottom: 20px;
@@ -201,19 +202,6 @@ section {
   flex: 1 30%;
 }
 
-.step-text {
-  flex: 12;
-}
-.step-text p {
-  color: #39a6b2;
-  font-size: 18px;
-}
-
-.step-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: #024e76;
-}
 .step-info {
   flex: 2 70%;
   display: flex;
@@ -229,6 +217,22 @@ section {
 .step-img img {
   max-width: 100%;
 }
+
+.step-text {
+  flex: 12;
+}
+
+.step-text p {
+  color: #39a6b2;
+  font-size: 18px;
+}
+
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
+}
+
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
@@ -242,9 +246,9 @@ section {
 
 .trainer {
   margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 1;
 }
 
 .trainer img {
@@ -351,4 +355,28 @@ section {
 
 .flex-row {
   display: flex;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header h1 a {
+    /* this will be applied to any screen smaller than 980px */
+    color: tomato;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  header h1 {
+    /* this will be applied to any screen smaller than 980px */
+    font-size: 80px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE OHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  header h1 {
+    /* this will be applied  */
+    font-size: 100px;
+  }
 }
