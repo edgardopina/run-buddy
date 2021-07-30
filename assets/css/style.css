@@ -1,7 +1,7 @@
 :root {
   --primary-color: #fce138;
   --secondary-color: #024e76;
-  --tertiary-color: var(--tertiary-color);
+  --tertiary-color: #39a6b2;
 }
 
 * {
@@ -15,6 +15,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+
 /* HEADER / NAV BAR STYLES START */
 
 header {
@@ -23,15 +24,14 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: -webkit-sticky;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  z-index: 9999;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
   background-attachment: fixed;
   background-position: 80%;
+  z-index: 9999;
 }
 
 header h1 {
@@ -75,6 +75,8 @@ header nav ul li a:hover {
 
 /* HEADER / NAVBAR STYLES END */
 
+
+
 /* FOOTER STYLES START */
 footer {
   background: var(--primary-color);
@@ -108,9 +110,8 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -137,18 +138,17 @@ section {
 
 .hero-form {
   border: 3px solid var(--secondary-color);
-  background-color: rgba(252, 225, 56, 0.8);
+  background-color: rgba(255, 225, 56, 0.8);
   padding: 20px;
   color: var(--secondary-color);
   width: 40%;
   margin: 3.5%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form button:hover {
-  color: #fce1fc;
-  background: var(--tertiary-color);
+  background-color: var(--tertiary-color);  
 }
 
 .hero-form h3 {
@@ -166,13 +166,13 @@ section {
   font-size: 16px;
   color: var(--secondary-color);
   width: 100%;
-  margin-bottom: 15px;
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px; 
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
 }
 
 .form-input:focus {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255,255,255, 1);
   outline: none;
 }
 
@@ -186,33 +186,26 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
-  border-radius: 15px;
-}
+  border-radius: 10px;
+} 
 
-.hero-formbutton:hover {
-  background-color: var(--tertiary-color);
-}
-
-.checkbox-wrapper input,
-.radio-wrapper input {
+.checkbox-wrapper input, .radio-wrapper input {
   opacity: 0;
 }
 
-.checkbox-wrapper label,
-.radio-wrapper label {
+.checkbox-wrapper label, .radio-wrapper label {
   position: relative;
   left: 10px;
   margin: 10px;
   line-height: 1.6;
 }
 
-.checkbox-wrapper label::before,
-.radio-wrapper label::before {
+.checkbox-wrapper label::before, .radio-wrapper label::before {
   content: "";
   height: 20px;
   width: 20px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid var(--secondary-color);
+  background: rgba(255, 255, 255, 0.75);  
+  border: 1px solid var(--secondary-color);  
   position: absolute;
   top: -4px;
   left: -30px;
@@ -224,8 +217,8 @@ section {
 
 .radio-wrapper label::after {
   content: "";
-  width: 20px;
   height: 20px;
+  width: 20px;
   border-radius: 50%;
   background: var(--secondary-color);
   position: absolute;
@@ -246,17 +239,17 @@ section {
   transform: rotate(-58deg);
 }
 
-.checkbox-wrapper input + label::after,
+.checkbox-wrapper input + label::after, 
 .radio-wrapper input + label::after {
   content: none;
 }
 
-.checkbox-wrapper input:checked + label::after,
+.checkbox-wrapper input:checked + label::after, 
 .radio-wrapper input:checked + label::after {
   content: "";
 }
-
 /* HERO STYLES END */
+
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -279,7 +272,6 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
-
 .intro p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -290,8 +282,9 @@ section {
 }
 /* WHAT YOU DO STYLES END */
 
+
 /* WHAT YOU DO STYLES START */
-.steps {
+.steps { 
   background: var(--primary-color);
 }
 
@@ -303,6 +296,10 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.step:last-child {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -341,10 +338,6 @@ section {
   line-height: 1.5;
   color: var(--secondary-color);
 }
-.step:not(:last-child) {
-  border-bottom: 1px solid var(--tertiary-color);
-}
-
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
@@ -420,16 +413,14 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   border: 1px solid var(--secondary-color);
   display: block;
   padding: 7px 15px;
@@ -438,13 +429,12 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
-  border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  background-color: rgba(255, 255, 255, 1);
+.contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
   outline: none;
 }
 
@@ -456,18 +446,17 @@ section {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .contact-form button:hover {
   color: var(--primary-color);
-  background-color: var(--tertiary-color);
+  background: var(--tertiary-color);
 }
 
 .contact-info a {
   color: var(--primary-color);
 }
-
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
@@ -506,17 +495,15 @@ section {
     font-size: 20px;
   }
 
-  footer h2,
-  footer div {
+  footer h2, footer div {
     text-align: center;
     width: 100%;
   }
 
-  .hero-cta,
-  .hero-form {
+  .hero-cta, .hero-form {
     width: 100%;
   }
-
+  
   .hero-cta {
     text-align: center;
   }
@@ -524,12 +511,12 @@ section {
   .section-title {
     width: 80%;
   }
-
+  
   .trainer {
     flex: 0 70%;
   }
-
-  .contact-info iframe {
+  
+  .contact-info iframe{
     flex: 1 100%;
   }
 }
@@ -559,7 +546,11 @@ section {
   }
 
   .step-text {
-    flex: 100%;
+    flex: 100%;  
+  }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
   }
 }
 
