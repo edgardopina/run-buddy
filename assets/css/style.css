@@ -558,6 +558,11 @@ section {
   .trainer-bio h4 {
     display: block;
   }
+
+  .trainer-bio h3,
+  .trainer-bio h4 {
+    display: block;
+  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
