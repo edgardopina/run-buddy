@@ -138,11 +138,7 @@ section {
 }
 
 .hero-form button:hover {
-<<<<<<< HEAD
-  background-color: #39a6b2;  
-=======
   background-color: #39a6b2;
->>>>>>> develop
 }
 
 .hero-form h3 {
@@ -181,11 +177,6 @@ section {
   padding: 10px 20px;
   font-size: 16px;
   border-radius: 10px;
-<<<<<<< HEAD
-} 
-/* HERO STYLES END */
-
-=======
 }
 /* HERO STYLES END */
 
@@ -251,7 +242,6 @@ section {
 .radio-wrapper input:checked + label::after {
   content: "";
 }
->>>>>>> develop
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -286,11 +276,7 @@ section {
 /* WHAT YOU DO STYLES END */
 
 /* WHAT YOU DO STYLES START */
-<<<<<<< HEAD
-.steps { 
-=======
 .steps {
->>>>>>> develop
   background: #fce138;
 }
 
@@ -428,12 +414,8 @@ section {
   font-style: normal;
 }
 
-<<<<<<< HEAD
-.contact-form input, .contact-form textarea {
-=======
 .contact-form input,
 .contact-form textarea {
->>>>>>> develop
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
